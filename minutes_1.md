@@ -8,6 +8,16 @@
 
 ### Topics Discussed
 
+| Pbi | sprint | Tasks | Status |
+|---|---|---|---|
+Pbi-Prototype 1- We tested the prototype to identify confusing navigation, missing features, and areas that needed improvement before developing the more complete version.
+Sprint-2
+Task-Our task is below at the bottom 
+Status-So far we are getting the basis running but we should be done within weeks.
+
+
+
+
 1. Prototype design-For our prototype we will play around with the different colors, fonts, and clicks to give the calculator a crazy pop to it!
 2. 
 3. Types of users and user interactions-The type of users that a use this products are people like students, teachers, developers, and even testers
