@@ -12,6 +12,13 @@
 |---|---|---|---|
 Pbi-Prototype 1- We tested the prototype to identify confusing navigation, missing features, and areas that needed improvement before developing the more complete version.
 Sprint-2
+
+Input	  Output	  Direction	  Status
+14	    XIV	  Arabic →  Roman	Valid
+XLII	  42	Roman → Arabic	 Valid
+
+
+
 Task-Our task is below at the bottom 
 Status-So far we are getting the basis running but we should be done within weeks.
 
