@@ -1,0 +1,59 @@
+Rashaun Booker
+
+(1) Section 1  Feature, (2) Section 2 Persona, (3) Section 3 scenario, and (4) Section 4 user story
+
+## Section 1: Features
+
+Our Roman Numeral Calculator should do more than place an answer on the screen. The result has to be correct, the user needs to know which kind of conversion they are doing, and mistakes should be handled in a way that makes sense. Since I am responsible for the layout and appearance, I want the design to support the actual calculations rather than distract from them. For this sprint, I would prioritize the following three features.
+
+### Feature 1: Two-way conversion with separate actions
+The calculator will support both decimal-to-Roman and Roman-to-decimal conversion. Users enter one value, choose the appropriate action, and see the converted value. Standard Roman numerals will be supported for whole numbers 1 through 3999. For example, `2026` converts to `MMXXVI`, and `CMXCIX` converts to `999`. Having separate, plainly labeled buttons reduces uncertainty over which type of input the app expects.
+
+### Feature 2: Convert Roman numerals to regular numbers
+Users can enter a valid Roman numeral and click **Convert to Number**. For example, entering `XLII` displays `42`. The input should accept lowercase letters as well and convert them to uppercase before checking the answer.
+
+### Feature 3: Clean layout with readable results and error messages
+The input box should be near the top, the two conversion buttons directly below it, and the result in a clearly labeled section. A **Clear** button lets users start over. If the input is empty, outside the accepted range, or not a valid Roman numeral, the app should show a short explanation rather than a misleading result. My responsibility is to make the buttons easy to see and keep the screen organized on a phone or computer.
+
+
+## Section 2: Personas
+
+### Persona 1: Alexis, first-year college student
+Alexis is 18 and needs to translate Roman numerals for a class assignment. She sometimes remembers the symbols but struggles with subtraction combinations such as `IX`, `XL`, and `XC`. She usually checks answers from her phone between classes. Her main needs are quick conversions, minimal steps, and buttons that do not become cramped on a small screen.
+
+### Persona 2: Dr. Williams, instructor
+Dr. Williams is 43 and uses Roman numerals in introductory course examples. She wants to demonstrate conversions to students and occasionally verify whether a numeral was written correctly. She needs results that are easy to read when projected and feedback that distinguishes a typing error from a valid numeral.
+
+### Persona 3: Jordan, software tester
+Jordan is 24 and tests small applications as part of learning software development. He wants to try valid and invalid inputs and check whether the calculator responds consistently. He needs clear error messages and a predictable result display so he can tell whether the app handled an input correctly.
+
+## Section 3: Scenarios
+
+### Scenario 1: Converting a date on a phone
+Alexis is studying and needs the Roman numeral for 2026. On her phone, she opens the calculator, enters `2026`, and selects **Number → Roman**. The calculator returns `MMXXVI` in a bold result panel. She can read it immediately without scrolling through unnecessary information. This scenario shows why a responsive layout and separate result area matter.
+
+### Scenario 2: Demonstrating an invalid Roman numeral
+During class, Dr. Williams enters `VX` to show that Roman numeral rules have limits. The app does not quietly produce a number. It explains that the Roman numeral is invalid. She then enters `XLV`, selects **Roman → Number**, and the calculator returns `45`. The app helps her show students the difference between valid and invalid notation.
+
+### Scenario 3: Checking boundary values
+Chris tests the edges of the supported range. He enters `3999` and receives `MMMCMXCIX`. He then enters `4000` and gets an out-of-range message. After pressing Clear, the input, previous result, and message disappear. He repeats the test with `0` and an empty field. This scenario checks whether the interface and the calculation rules stay consistent.
+
+## Section 4: User Stories
+
+### User Story 1: Reliable two-way conversion
+**As a** student, **I want to** convert between decimal numbers and Roman numerals **so that** I can check my work in either format.  
+**Acceptance criteria:** `2026 → MMXXVI`, `CMXCIX → 999`, and the appropriate action determines which conversion is performed. Supported values are whole numbers 1 through 3999.
+
+### User Story 2: Validation instead of incorrect output
+**As an** instructor, **I want to** be told when a value is invalid **so that** I do not teach or rely on a wrong conversion.  
+**Acceptance criteria:** The app rejects `VX`, `IIII`, `0`, and `4000`; it displays a readable explanation; it does not leave an old answer visible as though it belongs to the new input.
+
+### User Story 3: Layout that works for different users
+**As a** user working from my phone or laptop, **I want to** find the input, buttons, and result without searching around the page **so that** I can finish a conversion quickly.  
+**Acceptance criteria:** The interface has visible labels and clear button states; keyboard focus remains visible; narrow screens do not cut off buttons; Clear resets the field, results, and feedback.
+
+User Story 4: Simple interface and clear feedback
+**As a** first-time user, **I want to** see labeled buttons, a visible result, and helpful error messages **so that** I know what to do without asking for help.  
+**Acceptance criteria:** The input, conversion buttons, result, and Clear action are easy to locate; Clear removes the input, result, and any error; the layout remains usable on a narrow screen.
+
+It may be a little more than you asked for but we was able to gather a lot of education 
