@@ -26,4 +26,4 @@ With having this information gathered together so far it is giving me a good fee
 | 11. Input validation story | Drafted | 3 | 1 hour | [Member / confirm] | [Reviewer] |
 | 12. Responsive layout story | Drafted | 3 | 1 hour | [Member / confirm] | [Reviewer] |
 
-This is also our updated PBI table that we were able to finish as well
+This is also our updated PBI table that we have so far
