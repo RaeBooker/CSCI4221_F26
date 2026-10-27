@@ -1,0 +1,14 @@
+Structure of the database tables
+
+We plan to use **PostgreSQL as one shared cloud database**. The table below are proposed designs, not claims that the database is already live.
+
+### Table 1: `conversion_history` (for Conversion)
+
+| Column | Data type | Purpose |
+|---|---|---|
+| history_id | BIGSERIAL | Primary key for a conversion |
+| session_key | VARCHAR(64) | Keeps one browser session’s history together |
+| original_input | VARCHAR(50) | Number or Roman numeral entered |
+| conversion_type | VARCHAR(20) | Direction of the conversion |
+| output_value | VARCHAR(50) | Calculated result |
+| created_at | TIMESTAMPTZ | When the conversion happened |
