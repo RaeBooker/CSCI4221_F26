@@ -1,7 +1,7 @@
 Rashaun Booker 
 
 So on todays update me and my team have been looking over together what is daemon and an image?
-We also came together to see what are the major components?
+We also came together to see what are the major and sub components?
 
 
  The Docker daemon is the background service that builds images and starts/stops containers. It runs on the Docker host, not inside the app container. We use a `Dockerfile` to describe the image.
