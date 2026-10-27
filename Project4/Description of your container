@@ -1,0 +1,3 @@
+**Docker and containers:** Docker is a tool for packaging and running software in containers. A container is an isolated running copy of our app with what it needs to work. An **image** is the saved package used to start a container. The **Docker daemon** is the background service that builds images and starts/stops containers. It runs on the Docker host, not inside the app container. We use a `Dockerfile` to describe the image.
+
+**What is inside the container?** The interface, conversion code, routes, and database connection library are packaged inside one Flask app image. The PostgreSQL database is a separate shared cloud service. The app container does not store permanent user data on its own disk.
