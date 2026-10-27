@@ -1,0 +1,11 @@
+| Major component | Main job | Assigned to | Related database table | Files |
+|---|---|---|---|---|
+| Component 1: Conversion | Take a number or Roman numeral, check the input, and return a correct conversion. | Team member 1 (Tyana) | conversion_history | conversion.py, routes/conversion_routes.py, tests/test_conversion.py |
+| Component 2: Saved Results | Let users save useful conversions and view them again later. | Team member 2 (Rashaun) | saved_results | saved_results.py, routes/saved_routes.py, tests/test_saved_results.py |
+| Component 3: Feedback | Let users report an incorrect result or an app problem. | Team member 3 (Jalen) | feedback_reports | feedback.py, routes/feedback_routes.py, tests/test_feedback.py |
+
+**Component 1: Conversion.** Take a number or Roman numeral, check the input, and return a correct conversion. **Sub-components:** input checks, service logic, API route, and testing. **Database use:** Reads and writes recent conversions so users can see what they entered before. **Needed files:** `conversion.py, routes/conversion_routes.py, tests/test_conversion.py`.
+
+**Component 2: Saved Results.** Let users save useful conversions and view them again later. **Sub-components:** input checks, service logic, API route, and testing. **Database use:** Stores saved conversions using an anonymous session key. No account is required for the first version. **Needed files:** `saved_results.py, routes/saved_routes.py, tests/test_saved_results.py`.
+
+**Component 3: Feedback.** Let users report an incorrect result or an app problem. **Sub-components:** input checks, service logic, API route, and testing. **Database use:** Saves user reports so the team can review and fix problems. **Needed files:** `feedback.py, routes/feedback_routes.py, tests/test_feedback.py`.
