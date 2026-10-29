@@ -1,3 +1,4 @@
+Rashaun Booker
 | Major component | Main job | Assigned to | Related database table | Files |
 |---|---|---|---|---|
 | Component 1: Conversion | Take a number or Roman numeral, check the input, and return a correct conversion. | Team member 1 (Tyana) | conversion_history | conversion.py, routes/conversion_routes.py, tests/test_conversion.py |
