@@ -1,3 +1,4 @@
+Rashaun Booker
 Structure of the database tables
 
 We plan to use **PostgreSQL as one shared cloud database**. The table below are proposed designs, not claims that the database is already live.
