@@ -8,10 +8,15 @@ Attendees; Rashaun Booker
  Who finished which screen or feature?
 So for the project that me and my team have been working on currently i have did the home screen and the features so that whenever you are to start the app up you can see the great features that comes with it!
 
-Task changes from today's meeting
-| PBI ID | Task | Before | After | Owner |
+| ID | Work item | Suggested owner | Status before work | Evidence when done |
 |---|---|---|---|---|
-| P5-01 | Generate Expo starter | [status] | [status] | [name] |
-| P5-02 | Implement two conversion clicks | [status] | [status] | [name] |
-| P5-03 | Test invalid inputs | [status] | [status] | [name] |
+| P5-01 | Clone group repository and create Project5 folder | Rashaun | To do | Local checkout and GitHub URL |
+| P5-02 | Assemble AI prompt sections and real prototype screenshots | Rashaun + group | To do | AI_Prompt.md and attachments |
+| P5-03 | Generate Expo project with Node.js LTS | Rashaun | To do | package.json and generated structure |
+| P5-04 | Make both conversion buttons work | Rashaun | To do | App screenshots/test results |
+| P5-05 | Validate bad and boundary inputs | Rashaun | To do | Test notes and working error messages |
+| P5-06 | Implement session saved-results UI | Rashaun | To do | Save and remove working locally |
+| P5-07 | Hold meeting and write actual minutes | rotating team member | To do | Dated Markdown minutes |
+| P5-08 | Push source and documentation to the required repository | Rashaun | To do | Repository commit and link |
+
 
