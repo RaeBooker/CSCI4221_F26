@@ -1,0 +1,31 @@
+Rashaun Booker
+September 19, 2026
+
+
+
+## Section 1: Short app description
+Build a small Roman numeral converter that opens directly to one screen. Keep the design neat and straightforward. A user enters a value, chooses which way to convert it, reads the result, and can save or clear it. My focus for Project 5 is getting the phone screen and its basic actions working reliably.
+
+## Section 2: Product vision (Project 1)
+Our goal is a Roman numeral calculator that makes conversions easy for students, teachers, and software testers. People should be able to enter a regular whole number and see its Roman numeral, or enter a Roman numeral and see its number. The app should be quick to use and clear when something is typed incorrectly. This restates Rashaun's Project 1 idea in plain language.
+
+## Section 3: Team prototypes (Project 2)
+- **Rashaun Booker:** A Roman numeral calculator with an input field, two conversion actions, a result area, and error feedback. Project 2 minutes document sample inputs `14 â XIV`, `XLII â 42`, `99 â XCIX`, and invalid `IIX`. Add the **actual screen image(s)** here before sending this prompt to AI. The checked repository had notes, but no Rashaun prototype image in that folder.
+- **Jalen Woodard:** Group 2 Project 2 work and collaboration notes are in the repository. Add his actual prototype image and accurate screen description after reviewing it with him; do not call a generic README a screenshot.
+- **Tyana Davis:** A separate **School System Website** prototype is in the Group 2 repository. It includes login, dashboard, students, courses, faculty, and buildings images. It does **not** match the Roman calculator and should only be included as team prototype context after the group confirms the final shared app.
+
+
+## Section 4: Features, personas, scenarios, and stories (Project 3)
+**Main features:** Convert numbers to Roman numerals; convert Roman numerals to numbers; accept upper- or lowercase Roman input; validate numbers from 1 to 3999; show helpful errors; provide a Clear action; display results clearly. The Project 4 plan adds saved conversions and an optional feedback report form.
+
+**Personas:** Alexis, a student checking assignments quickly on her phone; Dr. Williams, an instructor demonstrating valid and invalid notation; Jordan, a tester checking boundaries and error handling.
+**Scenarios:** Alexis types `2026` and sees `MMXXVI`. Dr. Williams tries `VX`, receives an error, then enters `XLV` and sees `45`. Jordan tries `3999`, `4000`, `0`, and a blank field to check the app's limits and reset behavior.
+
+**User stories:** As a student, I want conversions in both directions so I can verify classwork. As an instructor, I want bad Roman numerals rejected instead of receiving incorrect answers. As a phone user, I want readable buttons and a Clear action so I can try again quickly. As a returning user, I want to save useful results so I can reference them later.
+
+**Acceptance checks:** `2026 â MMXXVI`; `CMXCIX â 999`; lowercase `xlii â 42`; reject `VX`, `IIII`, `IIX`, `0`, `4000`, and blank input; clearing empties input, result, and error.
+
+## Section 5: Architecture design (Project 4)
+The overall design has three layers. **Mobile interface:** a React Native Expo app with the input, buttons, results, and saved list. **Application logic:** validation and conversion functions used by the Expo app now, with the planned Flask API for conversion, saved results, and feedback when the backend is built. **Data layer:** Project 4 describes PostgreSQL tables called `conversion_history`, `saved_results`, and `feedback_reports` on a shared cloud database, accessible only through the server.
+
+The planned backend is a Flask app inside Docker, with route and service files such as `conversion.py`, `saved_results.py`, `feedback.py`, and related routes/tests. A future connected flow would be **Expo app â HTTPS Flask API â PostgreSQL**. The phone must not receive database passwords. For the first local Expo demo, run conversion entirely on the device. Any saved entries or feedback stored only in memory are **temporary demo behavior**, not a working cloud backend.
